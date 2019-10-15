@@ -46,6 +46,7 @@ namespace Russianbullet
             
             SpinBtn.Enabled = false;
             PicBox1.Image = Russianbullet.Resource1.SpinGif;  // code for setting the image
+            // adding sound from resources
             SoundPlayer sp = new SoundPlayer(Russianbullet.Resource1.spin_gun);
             sp.Play();
 
