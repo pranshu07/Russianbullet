@@ -72,9 +72,9 @@ namespace Russianbullet {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap aimgif {
+        internal static System.Drawing.Bitmap awaygif {
             get {
-                object obj = ResourceManager.GetObject("aimgif", resourceCulture);
+                object obj = ResourceManager.GetObject("awaygif", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -134,16 +134,6 @@ namespace Russianbullet {
         internal static System.Drawing.Bitmap loadGif {
             get {
                 object obj = ResourceManager.GetObject("loadGif", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap ShootaGif {
-            get {
-                object obj = ResourceManager.GetObject("ShootaGif", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

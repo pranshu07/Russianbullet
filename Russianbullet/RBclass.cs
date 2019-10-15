@@ -12,7 +12,7 @@ namespace Russianbullet
         public int ShootingAwayChances = 2;
         public int Bullet = 0;
         public int FireRemain = 4;
-        public int Shotaway = 3;
+       
 
         public void LoadBullet()
 
@@ -35,11 +35,12 @@ namespace Russianbullet
 
             if(Bullet == 1)
             {
-                MessageBox.Show("you are dead!");
+                MessageBox.Show("You are dead , do you want to play again?!");
+                Application.Restart();
             }
             else if(FireRemain > 1)
             {
-                MessageBox.Show("keep playing");
+                MessageBox.Show("keep it up ");
                 Bullet--;
                 FireRemain--;
             }
@@ -59,28 +60,24 @@ namespace Russianbullet
 
             if (Bullet == 1)
             {
-                MessageBox.Show("you survived");
+                MessageBox.Show("You survived, do you want to play again?");
+                Application.Restart();
             }
-            else if (Shotaway > 2)
+            else if (ShootingAwayChances > 1)
             {
-                MessageBox.Show("keep playing");
+                MessageBox.Show("Keep it up");
                 Bullet--;
-                Shotaway--;
+                ShootingAwayChances--;
             }
             else
             {
                 Bullet--;
-                Shotaway--;
+                ShootingAwayChances--;
             }
             
 
             return ShootingAwayChances;
 
-        }
-
-        internal object bulletechange(object lodedgunspin)
-        {
-            throw new NotImplementedException();
         }
     }
 }

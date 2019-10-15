@@ -43,24 +43,19 @@ namespace Russianbullet
         private void SpinBtn_Click(object sender, EventArgs e)
         {
 
-
-            AimBtn.Enabled = true;
             SpinBtn.Enabled = false;
             PicBox1.Image = Russianbullet.Resource1.SpinGif;
             SoundPlayer sp = new SoundPlayer(Russianbullet.Resource1.spin_gun);
             sp.Play();
 
             Bclass.SpinChamber();
-            textBox1.Text = Bclass.Bullet.ToString(); // remove this line later!!!!!!!*******
+            FireBtn.Enabled = true;
+            ShAwayBtn.Enabled = true;
+            
         }
 
         private void AimBtn_Click(object sender, EventArgs e)
         {
-            FireBtn.Enabled = true;
-            ShAwayBtn.Enabled = true;
-            PicBox1.Image = Russianbullet.Resource1.aimgif;
-            SoundPlayer sp = new SoundPlayer(Russianbullet.Resource1.aim);
-            sp.Play();
         }
 
         private void FireBtn_Click(object sender, EventArgs e)
@@ -73,40 +68,41 @@ namespace Russianbullet
             int chances = Bclass.Fire();
             if (chances == 0)
             {
-                MessageBox.Show("you win");
+                MessageBox.Show("You win");
                 FireBtn.Enabled = false;
                 ShAwayBtn.Enabled = false;
                 SpinBtn.Enabled = false;
                 LoadBtn.Enabled = false;
 
+                MessageBox.Show(" Do you want to play again?");
+                Application.Restart();
+
             }
 
         }
 
+        
 
-
-        private void ShotawayBtn_Click(object sender, EventArgs e)
+        private void ShAwayBtn_Click(object sender, EventArgs e)
         {
-            //PicBox1.Image = Russianbullet.Resource1.ShootaGif;
-            //SoundPlayer sp = new SoundPlayer(Russianbullet.Resource1.shot_sound);
-            //sp.Play();
-            /*
+            PicBox1.Image = Russianbullet.Resource1.awaygif;
+            SoundPlayer sp = new SoundPlayer(Russianbullet.Resource1.aim);
+            sp.Play();
+
             int chances = Bclass.ShootingAway();
             
             if (chances == 0)
             {
                 FireBtn.Enabled = false;
-                ShotawayBtn.Enabled = false;
+                ShAwayBtn.Enabled = false;
                 SpinBtn.Enabled = false;
                 LoadBtn.Enabled = false;
-                MessageBox.Show("no chances left, you are daed");
+                
+                MessageBox.Show("No chances left, you are dead, do you want to play again?");
+                Application.Restart();
             }
-            */
         }
 
-        private void ShAwayBtn_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("hr");
-        }
+        
     }
 }

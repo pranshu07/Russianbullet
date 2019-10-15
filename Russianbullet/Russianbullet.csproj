@@ -129,9 +129,6 @@
     <None Include="Resources\load.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\aimgif.gif" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\loadGif.gif" />
   </ItemGroup>
   <ItemGroup>
@@ -145,6 +142,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ShootaGif.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aimgif.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aimgif1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\awaygif.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

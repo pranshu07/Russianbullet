@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29318.209
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Russianbullet", "Russianbullet\Russianbullet.csproj", "{3EEBFE78-7B60-41E3-A64D-B054717741F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "UnitTest\UnitTest.csproj", "{C62E89D0-4275-4884-9DC4-348BF54F9BA6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RussianUnitTest", "RussianUnitTest\RussianUnitTest.csproj", "{C4DB7D6B-3E73-4FE2-A1D8-498A85B440E4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{3EEBFE78-7B60-41E3-A64D-B054717741F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3EEBFE78-7B60-41E3-A64D-B054717741F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3EEBFE78-7B60-41E3-A64D-B054717741F5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C62E89D0-4275-4884-9DC4-348BF54F9BA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C62E89D0-4275-4884-9DC4-348BF54F9BA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C62E89D0-4275-4884-9DC4-348BF54F9BA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C62E89D0-4275-4884-9DC4-348BF54F9BA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4DB7D6B-3E73-4FE2-A1D8-498A85B440E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4DB7D6B-3E73-4FE2-A1D8-498A85B440E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4DB7D6B-3E73-4FE2-A1D8-498A85B440E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4DB7D6B-3E73-4FE2-A1D8-498A85B440E4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
