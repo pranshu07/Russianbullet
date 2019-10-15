@@ -31,6 +31,7 @@ namespace Russianbullet
 
         private void LoadBtn_Click(object sender, EventArgs e)
         {
+            //below code for loading bullet
             SpinBtn.Enabled = true;
             LoadBtn.Enabled = false;
             PicBox1.Image = Russianbullet.Resource1.loadGif;
@@ -42,9 +43,9 @@ namespace Russianbullet
 
         private void SpinBtn_Click(object sender, EventArgs e)
         {
-
+            
             SpinBtn.Enabled = false;
-            PicBox1.Image = Russianbullet.Resource1.SpinGif;
+            PicBox1.Image = Russianbullet.Resource1.SpinGif;  // code for setting the image
             SoundPlayer sp = new SoundPlayer(Russianbullet.Resource1.spin_gun);
             sp.Play();
 
@@ -54,13 +55,12 @@ namespace Russianbullet
             
         }
 
-        private void AimBtn_Click(object sender, EventArgs e)
-        {
-        }
+        
 
         private void FireBtn_Click(object sender, EventArgs e)
         {
-
+            
+            //below code for picturebox from resources
             PicBox1.Image = Russianbullet.Resource1.FireGif;
             SoundPlayer sp = new SoundPlayer(Russianbullet.Resource1.shot_sound);
             sp.Play();
@@ -68,14 +68,15 @@ namespace Russianbullet
             int chances = Bclass.Fire();
             if (chances == 0)
             {
-                MessageBox.Show("You win");
+                //code for message box
+                MessageBox.Show("You win"); // after winning all buttons will disable
                 FireBtn.Enabled = false;
                 ShAwayBtn.Enabled = false;
                 SpinBtn.Enabled = false;
                 LoadBtn.Enabled = false;
 
                 MessageBox.Show(" Do you want to play again?");
-                Application.Restart();
+                Application.Restart(); //once finished u can play again
 
             }
 
@@ -85,6 +86,7 @@ namespace Russianbullet
 
         private void ShAwayBtn_Click(object sender, EventArgs e)
         {
+            ////below code for picturebox from resources
             PicBox1.Image = Russianbullet.Resource1.awaygif;
             SoundPlayer sp = new SoundPlayer(Russianbullet.Resource1.aim);
             sp.Play();
@@ -93,13 +95,14 @@ namespace Russianbullet
             
             if (chances == 0)
             {
+                //all buttons will be disabled
                 FireBtn.Enabled = false;
                 ShAwayBtn.Enabled = false;
                 SpinBtn.Enabled = false;
                 LoadBtn.Enabled = false;
                 
                 MessageBox.Show("No chances left, you are dead, do you want to play again?");
-                Application.Restart();
+                Application.Restart();//once finished u can play again
             }
         }
 
