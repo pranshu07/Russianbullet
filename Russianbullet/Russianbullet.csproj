@@ -152,5 +152,8 @@
   <ItemGroup>
     <None Include="Resources\awaygif.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shooawy.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

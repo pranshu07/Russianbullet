@@ -88,7 +88,7 @@ namespace Russianbullet
         {
             ////below code for picturebox from resources
             PicBox1.Image = Russianbullet.Resource1.awaygif;
-            SoundPlayer sp = new SoundPlayer(Russianbullet.Resource1.aim);
+            SoundPlayer sp = new SoundPlayer(Russianbullet.Resource1.Shooawy);
             sp.Play();
 
             int chances = Bclass.ShootingAway();
